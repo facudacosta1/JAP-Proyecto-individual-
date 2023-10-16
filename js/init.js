@@ -39,3 +39,11 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+document.addEventListener('DOMContentLoaded',function(){
+  const cuenta = localStorage.getItem('cuenta');
+  
+  if(!cuenta){
+    window.location.href='login.html';
+  }
+})
