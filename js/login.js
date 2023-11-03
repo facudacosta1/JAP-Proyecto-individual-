@@ -18,7 +18,7 @@ const inputPassword = document.querySelector('#inputPassword');
             }
         
             let cuenta = JSON.stringify(cuentaJSON);
-            localStorage.setItem('cuenta', cuenta);
+            sessionStorage.setItem('cuenta', cuenta);
             window.location.href = 'index.html';
         }
         return false;

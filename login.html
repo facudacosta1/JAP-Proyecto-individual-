@@ -13,27 +13,47 @@
 </head>
 
 <body class="login-body">
+
+<!---------------------------------------MAIN LOGIN------------------------------------------------>
+
   <main class="d-flex align-items-center">
-    <div class="container">
+
+    <div class="container mt-4">
       <div class="row d-flex justify-content-center">
         <div class="col-10 col-md-8 col-lg-4">
           <!--Imagen login-->
           <img src="img/login.png" alt="Logo-Página" class="img-fluid">
-          <!--Input usuario-->
+          
+          <!----------------------------------------FORMULARIO LOGIN---------------------------------->
           <form action="" id="formLogin">
+            <label for="inputUser" class="d-none">Usuario</label>
             <input class="col-12 form-control my-2 " type="text" name="User" id="inputUser" placeholder="Usuario" required>
             <!--Input contraseña-->
+            <label for="inputPassword" class="d-none">Contraseña</label>
             <input class="col-12 form-control my-2" type="password" name="Password" id="inputPassword" placeholder="Contraseña" required>
             <div class="container d-flex justify-content-center">
               <!--Botón ingresar-->
               <button type="submit" class="btn btn-primary" id="btnIngresar">Ingresar</button>
             </div>
           </form>
+
+          <hr>
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="#" class="link link-underline link-underline-opacity-0">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="col-12 text-center">
+              <a href="#" class="link link-underline link-underline-opacity-0">Crear cuenta</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   </main>
   
+
+
 
   <footer class="text-muted fixed-bottom">
     <div class="container w-100">

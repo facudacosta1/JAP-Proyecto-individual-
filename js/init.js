@@ -41,7 +41,7 @@ let getJSONData = function(url){
 }
 
 document.addEventListener('DOMContentLoaded',function(){
-  const cuenta = localStorage.getItem('cuenta');
+  const cuenta = sessionStorage.getItem('cuenta');
   
   if(!cuenta){
     window.location.href='login.html';
