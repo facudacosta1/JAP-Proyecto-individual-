@@ -188,3 +188,7 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.dropdown-menu a:hover {
+  background-color: orange; /* Cambia a tu color de fondo deseado, por ejemplo, bg-primary */
+}

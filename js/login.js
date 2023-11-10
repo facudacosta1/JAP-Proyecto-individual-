@@ -18,9 +18,11 @@ const inputPassword = document.querySelector('#inputPassword');
             }
         
             let cuenta = JSON.stringify(cuentaJSON);
-            sessionStorage.setItem('cuenta', cuenta);
+            localStorage.setItem('cuenta', cuenta);
             window.location.href = 'index.html';
         }
         return false;
-    })
+    });
 
+    let coments = '';
+    localStorage.setItem('coments', JSON.stringify(coments));

@@ -40,10 +40,29 @@ let getJSONData = function(url){
     });
 }
 
+//Validar si está logueado
 document.addEventListener('DOMContentLoaded',function(){
-  const cuenta = sessionStorage.getItem('cuenta');
   
+  const cuenta = localStorage.getItem('cuenta');
   if(!cuenta){
     window.location.href='login.html';
-  }
+  } 
+  
+  nameUserInVar();
+
 })
+
+//Mostrar nombre en nav
+function nameUserInVar(){
+  let userName = JSON.parse(localStorage.getItem('cuenta'));
+  const nameVarContainer = document.getElementById('userNameContainer');
+  nameVarContainer.textContent = userName.usuario;
+}
+
+//Cerrar sesión
+
+function cerrarSesion(){
+  localStorage.removeItem('cuenta');
+  window.location.reload();
+}
+
